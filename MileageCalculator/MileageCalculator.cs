@@ -40,5 +40,10 @@ namespace MileageCalculator
 
         }
 
+        private void milesButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(milesTraveled + " miles", "Miles Traveled");
+        }
+
     }
 }

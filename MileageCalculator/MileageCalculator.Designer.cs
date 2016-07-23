@@ -35,6 +35,7 @@
             this.amountOwedLabel = new System.Windows.Forms.Label();
             this.actualOwedLabel = new System.Windows.Forms.Label();
             this.calculateButton = new System.Windows.Forms.Button();
+            this.milesButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.startMileageVal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.endMileageVal)).BeginInit();
             this.SuspendLayout();
@@ -121,7 +122,7 @@
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(103, 102);
+            this.calculateButton.Location = new System.Drawing.Point(28, 99);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(75, 23);
             this.calculateButton.TabIndex = 6;
@@ -129,11 +130,22 @@
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
+            // milesButton
+            // 
+            this.milesButton.Location = new System.Drawing.Point(156, 98);
+            this.milesButton.Name = "milesButton";
+            this.milesButton.Size = new System.Drawing.Size(75, 23);
+            this.milesButton.TabIndex = 7;
+            this.milesButton.Text = "Display Miles";
+            this.milesButton.UseVisualStyleBackColor = true;
+            this.milesButton.Click += new System.EventHandler(this.milesButton_Click);
+            // 
             // MileageCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(253, 134);
+            this.Controls.Add(this.milesButton);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.actualOwedLabel);
             this.Controls.Add(this.amountOwedLabel);
@@ -161,6 +173,7 @@
         private System.Windows.Forms.Label amountOwedLabel;
         private System.Windows.Forms.Label actualOwedLabel;
         private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Button milesButton;
     }
 }
 
