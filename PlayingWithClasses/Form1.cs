@@ -54,30 +54,14 @@ namespace PlayingWithClasses
 
         private void joeGivesToBob_Click(object sender, EventArgs e)
         {
-            if (joe.cash < 10)
-            {
-                MessageBox.Show("Joe is poor man, cut him some slack");
-            }
-            else
-            {
-                joe.cash -= 10;
-                bob.cash += 10;
-                UpdateForm();
-            }
+            bob.ReceiveCash(joe.GiveCash(10));
+            UpdateForm();
         }
 
         private void bobGivesToJoe_Click(object sender, EventArgs e)
         {
-            if (bob.cash < 10)
-            {
-                MessageBox.Show("Bob is poor bro, cut it out");
-            }
-            else
-            {
-                bob.cash -= 10;
-                joe.cash += 10;
-                UpdateForm();
-            }
+            joe.ReceiveCash(bob.GiveCash(10));
+            UpdateForm();
         }
     }
 }
