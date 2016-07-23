@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PlayingWithClasses
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         Guy joe;
         Guy bob;
@@ -23,7 +23,7 @@ namespace PlayingWithClasses
             bankCashLabel.Text = "The bank has $" + bank;
         }
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             joe = new Guy(50, "Joe");

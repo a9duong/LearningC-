@@ -1,6 +1,6 @@
 ﻿namespace PlayingWithClasses
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -104,7 +104,7 @@
             this.bobGivesToJoe.UseVisualStyleBackColor = true;
             this.bobGivesToJoe.Click += new System.EventHandler(this.bobGivesToJoe_Click);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,7 +116,7 @@
             this.Controls.Add(this.bankCashLabel);
             this.Controls.Add(this.bobsCashLabel);
             this.Controls.Add(this.joesCashLabel);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Fun with Joe and Bob";
             this.ResumeLayout(false);
             this.PerformLayout();
