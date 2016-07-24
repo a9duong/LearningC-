@@ -19,16 +19,13 @@ namespace DinnerPartyCost
         {
 
             InitializeComponent();
-            dinnerParty = new DinnerParty();
-            dinnerParty.SetHealthyOption(false);
-            dinnerParty.CalculateCostOfDecorations(true);
-            dinnerParty.SetPartyOptions(5, true);
+            dinnerParty = new DinnerParty((int)numericUpDown1.Value, healthyOptionCheckBox.Checked, fancyCheckBox.Checked);
             DisplayDinnerPartyCost();       
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            dinnerParty.SetPartyOptions((int)numericUpDown1.Value, fancyCheckBox.Checked);
+            dinnerParty.NumberOfPeople = (int) numericUpDown1.Value;
             DisplayDinnerPartyCost();
         }
 
@@ -40,7 +37,7 @@ namespace DinnerPartyCost
 
         private void fancyCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            dinnerParty.SetPartyOptions((int)numericUpDown1.Value, fancyCheckBox.Checked);
+            dinnerParty.CalculateCostOfDecorations(fancyCheckBox.Checked);
             DisplayDinnerPartyCost();
         }
 
